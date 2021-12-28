@@ -34,7 +34,7 @@
 <script type="text/javascript">
   $("button").click(function(){
     let entryOptions = $("#options").val();
-    let optionsArray = entryOptions.split(',');
+    let optionsArray = entryOptions.split(', ');
     let indexer = Math.floor(Math.random()* optionsArray.length);
     let finalChoice = optionsArray[indexer];
     $("#final").html(finalChoice);
